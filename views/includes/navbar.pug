@@ -1,0 +1,14 @@
+nav.navbar.navbar-expand-lg.bg-dark.navbar-dark(style= 'margin-bottom: 30px;')
+  // Brand
+  a.navbar-brand(href='#')
+  // Links
+  ul.navbar-nav
+    li.nav-item
+      a.nav-link(href='#') Dashboard
+    // Dropdown
+    li.nav-item.dropdown
+      a#navbardrop.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+        | Students
+      .dropdown-menu
+        a.dropdown-item(href='/students') Students List
+        a.dropdown-item(href='/students/input-student') Input New Student
